@@ -1,0 +1,444 @@
+/* Estilos gerais e layout */
+.container {
+  font-family: var(--font-main);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Títulos */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 3rem;
+  color: rgb(73, 112, 177);
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+.subtitle {
+  font-size: 1.2rem;
+  color: #6d7b2f; /* Tom mais escuro para contraste */
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Botões de seleção */
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.button {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #6d7b2f; /* Tom mais escuro para os botões */
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: #92a945; /* Hover mais claro */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button.active {
+  background-color: #a2bd30; /* Cor da identidade visual */
+  box-shadow: 0 4px 12px rgba(162, 189, 48, 0.4);
+}
+
+/* Calculadora de imposto */
+.calculator {
+  text-align: center;
+  margin: 30px 0;
+  position: relative;
+}
+
+.calculatorLabel {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.calculatorInput {
+  font-size: 1.5rem;
+  padding: 15px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #a2bd30; /* Cor da identidade visual */
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.calculatorInput:focus {
+  border-color: #92a945; /* Hover mais claro */
+  box-shadow: 0 0 10px rgba(162, 189, 48, 0.5);
+}
+
+.calculatorResult {
+  font-size: 1.4rem;
+  color: #a2bd30; /* Cor da identidade visual */
+  font-weight: bold;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.calculatorResult.animate {
+  animation: scaleUp 0.4s ease-out;
+}
+
+/* Passos de Doação */
+.stepsSection {
+  margin: 30px 0;
+}
+
+.highlightedTitle {
+  font-size: 2rem;
+  color:#a2bd30; /* Hover mais claro */
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.step:hover {
+  background-color: #ecf0f1;
+  transform: translateX(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stepNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #a2bd30; /* Cor da identidade visual */
+  margin-right: 20px;
+  transition: all 0.3s ease;
+}
+
+.stepDescription {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.step:hover .stepNumber {
+  color: #a2bd30; /* Hover mais claro */
+  transform: scale(1.2);
+}
+
+/* Seções de impacto e depoimentos */
+.impactSection,
+.testimonials {
+  margin: 40px 0;
+  position: relative;
+}
+
+.impactTitle,
+.testimonialsTitle {
+  font-size: 2rem;
+  color: #a2bd30; /* Hover mais claro */
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.impactText {
+  font-size: 1.2rem;
+  color: #6d7b2f; /* Tom escuro para contraste */
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial:hover {
+  background-color: #ecf0f1;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonialText {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.testimonialAuthor {
+  font-size: 1rem;
+  color: #555;
+  text-align: right;
+  font-style: italic;
+}
+
+/* Animação de foco nas seções */
+@keyframes highlightFocus {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.stepsSection,
+.impactSection,
+.testimonials {
+  animation: highlightFocus 1s ease-out;
+}
+
+/* Ajuste nos botões de seleção */
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.button.active {
+  background-color: #a2bd30; /* Cor da identidade visual */
+  box-shadow: 0 4px 10px rgba(162, 189, 48, 0.3);
+}
+
+/* Melhorias nos inputs e campos interativos */
+.calculatorInput {
+  border: 2px solid #a2bd30; /* Cor da identidade visual */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.calculatorInput:focus {
+  border-color: #92a945; /* Hover mais claro */
+  box-shadow: 0 0 5px rgba(162, 189, 48, 0.5);
+}
+
+.calculatorResult {
+  font-weight: bold;
+  color: #a2bd30; /* Cor da identidade visual */
+  margin-top: 15px;
+}
+
+/* .modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.closeModal {
+  background: none;
+  border: none;
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.submitButton {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.modalField {
+  margin-bottom: 15px;
+}
+
+.modalField label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modalField input,
+.modalField select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.modalField input[type="text"] {
+  width: calc(100% - 16px); /* Ajuste para garantir que o input de texto não quebre */
+}
+/* Estilos do botão de contato */
+/* Estilos do contêiner do botão de contato */
+.contactSection {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+}
+
+/* Estilos do botão de contato */
+.contactButton {
+  background-color: #25d366; /* Cor do WhatsApp */
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 50px; /* Borda arredondada */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Espaço entre o ícone e o texto */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Efeito de transição */
+  border: none;
+}
+
+.contactButton:hover {
+  background-color: #128c7e; /* Cor escura quando passar o mouse */
+  transform: scale(1.05); /* Aumenta ligeiramente o botão */
+}
+
+.contactButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.5); /* Destaque ao focar no botão */
+}
+
+/* Ícone do WhatsApp */
+.whatsappIcon {
+  font-size: 24px; /* Tamanho do ícone */
+}
+/* imposto.module.css */
+
+/* Botão de WhatsApp */
+.whatsappButton {
+  background-color: #25D366; /* Verde do WhatsApp */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.whatsappButton:hover {
+  background-color: #1ebd59; /* Cor mais escura no hover */
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.modalTitle {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.modalInput {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.modalButton {
+  background-color: #25D366; /* Verde do WhatsApp */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.modalButton:hover {
+  background-color: #1ebd59;
+}
+
+.modalCloseButton {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.modalCloseButton:hover {
+  background-color: #999;
+}

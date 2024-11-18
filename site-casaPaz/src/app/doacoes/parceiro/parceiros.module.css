@@ -1,0 +1,226 @@
+/* Container principal */
+.container {
+    font-family: var(--font-main);
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Seção de Nossos Parceiros */
+.partnersSection {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.sectionTitle {
+    font-size: 3rem;
+    color: rgb(73, 112, 177); /* Cor destacada para o título principal */
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.missionText {
+    font-size: 1.6rem;
+    color: #6d7b2f; /* Tom mais escuro para contraste */
+    margin-bottom: 50px;
+}
+
+/* Logos dos Parceiros */
+.partnersLogos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin-bottom: 50px;
+}
+
+.logoWrapper {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logoWrapper:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.partnerLogo {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.partnerLogo:hover {
+    transform: scale(1.1);
+}
+
+/* Seção de Benefícios da Parceria */
+.benefitsSection {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px;
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.benefitCard {
+    background-color: #f0f5e8; /* Tom claro relacionado à cor principal */
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.benefitCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.benefitTitle {
+    font-size: 2rem;
+    color: #a2bd30; /* Cor da identidade visual para os subtítulos */
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.benefitDescription {
+    font-size: 1.2rem;
+    color: #6d7b2f; /* Tom escuro para contraste */
+    line-height: 1.5;
+}
+
+/* Seção de Apelo para Novos Parceiros */
+.ctaSection {
+    text-align: center;
+    background-color: #a2bd30; /* Cor da identidade visual */
+    padding: 60px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.ctaTitle {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: rgb(255, 255, 255); /* Cor destacada para o título */
+}
+
+.ctaText {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.ctaButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.partnerButton,
+.contactButton {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: 600;
+}
+
+.partnerButton {
+    background-color: #6d7b2f; /* Tom mais escuro para botões */
+    color: white;
+}
+
+.contactButton {
+    background-color: #4c6328; /* Outro tom relacionado */
+    color: white;
+}
+
+.partnerButton:hover {
+    background-color: #92a945; /* Hover mais claro */
+    transform: scale(1.05);
+}
+
+.contactButton:hover {
+    background-color: #7b9132; /* Hover mais claro */
+    transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    position: relative; /* Adicionado para garantir o posicionamento do ícone de fechar */
+}
+
+/* Estilo para o ícone de fechar */
+.closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; /* Cor visível para o ícone */
+    cursor: pointer;
+    z-index: 2000; /* Garantir que o ícone esteja acima de outros elementos */
+}
+
+.closeModal:hover {
+    color: red; /* Cor ao passar o mouse sobre o ícone */
+}
+
+.whatsappButton {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.referralInput {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}

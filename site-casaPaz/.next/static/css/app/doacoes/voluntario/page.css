@@ -1,0 +1,230 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/app/doacoes/voluntario/Voluntariado.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+/* Container principal */
+.Voluntariado_container___TI55 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: var(--font-main);
+}
+
+/* Cabeçalho */
+.Voluntariado_header__EnfSJ {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.Voluntariado_title__YXxuF {
+    font-size: 3rem;
+    color: rgb(73, 112, 177);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.Voluntariado_subtitle__t9nze {
+    font-size: 1.6rem;
+    color: #6d7b2f;
+    margin-bottom: 50px;
+}
+
+/* Estilo do Carrossel de Imagens */
+.Voluntariado_carousel__Oro5_ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.Voluntariado_carouselImage__VeCev.Voluntariado_expanded__51RbI {
+    width: 100%; /* Quando expandida, a imagem ocupa 100% do container */
+    max-width: none; /* Remover o limite máximo de largura */
+    height: auto;
+}
+
+.Voluntariado_carouselImage__VeCev {
+    width: 100%; /* Ou defina um valor fixo, como 300px */
+    max-width: 600px; /* Defina o tamanho máximo desejado */
+    -o-object-fit: cover;
+       object-fit: cover; /* Garantir que a imagem não distorça */
+    transition: transform 0.3s ease; /* Transição suave para o zoom */
+}
+
+.Voluntariado_carouselControls__aJP7R {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.Voluntariado_carouselButton__Yshbk {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Voluntariado_carouselButton__Yshbk:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Seção de Impacto */
+.Voluntariado_impactSection__yhsoE {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Voluntariado_impactTitle__cnGKO {
+    font-size: 3rem;
+    color: rgb(73, 112, 177);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.Voluntariado_impactText__LGfmZ {
+    font-size: 16px;
+    color: #6d7b2f; 
+    line-height: 1.6;
+}
+
+.Voluntariado_stats__O_7r9 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.Voluntariado_stat__8FaZy {
+    text-align: center;
+}
+
+.Voluntariado_statNumber__584BE {
+    font-size: 36px;
+    color: rgb(73, 112, 177); /* Azul principal */
+    font-weight: bold;
+}
+
+.Voluntariado_statDescription__DhY3u {
+    font-size: 14px;
+    color: #6d7b2f;
+}
+
+/* Seção de Cargos de Voluntário */
+.Voluntariado_volunteerRoles__cG_8N {
+    background-color: #f7f7f7;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.Voluntariado_rolesTitle__XWPh8 {
+    font-size: 30px;
+    color: rgb(73, 112, 177); /* Azul principal */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.Voluntariado_rolesList__P0Emp {
+    list-style: none;
+    padding: 0;
+}
+
+.Voluntariado_roleItem__8K_FH {
+    margin-bottom: 30px;
+}
+
+.Voluntariado_roleTitle__MR1wJ {
+    font-size: 22px;
+    color: #a2bd30;
+    font-weight: bold;
+}
+
+.Voluntariado_roleDescription__F0rNJ {
+    font-size: 16px;
+    color: #6d7b2f;
+}
+
+.Voluntariado_joinButton__nlWCZ {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 30px;
+    background-color: #6d7b2f; /* Verde escuro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Voluntariado_joinButton__nlWCZ:hover {
+    background-color: #92a945; /* Hover mais claro */
+}
+
+/* Formulário */
+.Voluntariado_formSection__RPP8z {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Voluntariado_formTitle__euLeo {
+    font-size: 30px;
+    color: rgb(73, 112, 177); /* Azul principal */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.Voluntariado_formDescription__q7n95 {
+    font-size: 16px;
+    color: #a2bd30; /* Cor neutra */
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.Voluntariado_form__ckaoO {
+    display: flex;
+    flex-direction: column;
+}
+
+.Voluntariado_formLabel__uT2Nz {
+    font-size: 14px;
+    color: rgb(73, 112, 177);
+    margin-bottom: 5px;
+}
+
+.Voluntariado_formInput__ETGKP,
+.Voluntariado_formSelect__eHSHp {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.Voluntariado_formSubmit__yhW6e {
+    padding: 10px 30px;
+    background-color:rgb(73, 112, 177); /* Azul principal */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Voluntariado_formSubmit__yhW6e:hover {
+    background-color: #003d80; /* Hover mais escuro */
+}
+

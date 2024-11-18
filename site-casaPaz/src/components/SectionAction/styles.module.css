@@ -1,0 +1,27 @@
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.background {
+    background-color: #a2bd30;
+    opacity: 1;
+    background-image: radial-gradient(circle at center center, #ffffff, #a2bd30),
+        repeating-radial-gradient(
+            circle at center center,
+            #ffffff,
+            #ffffff,
+            40px,
+            transparent 80px,
+            transparent 40px
+        );
+    background-blend-mode: multiply;
+}
+
+.section {
+    font-family: 'Poppins', sans-serif;
+    background-color: #a2bd30;
+    opacity: 1;
+    background-image: radial-gradient(circle at center center, #ffffff, #a2bd30),
+                      repeating-radial-gradient(circle at center center, #ffffff, #ffffff 40px, transparent 80px, transparent 40px);
+    background-blend-mode: multiply;
+}

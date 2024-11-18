@@ -1,0 +1,73 @@
+/* src/components/Dashboard.css */
+.dashboard-container {
+    display: flex;
+    height: 100%;
+    min-height: 100vh; /* Ensure it takes at least the full viewport height */
+}
+
+.dashboard-sidebar {
+    background-color: #6a994e;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.dashboard-logo {
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.dashboard-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-link {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Para alinhar ícone e texto */
+    transition: background-color 0.3s; /* Efeito suave na transição de cor */
+}
+
+.nav-link:hover {
+    background-color: #52734d; /* Cor ao passar o mouse */
+}
+
+.dashboard-nav a.active {
+    background-color: #52734d;
+}
+
+.nav-icon {
+    margin-right: 0.5rem; /* Espaço entre ícone e texto */
+    font-size: 1.2em; /* Tamanho do ícone */
+}
+
+.dashboard-logout-button {
+    margin-top: auto;
+    padding: 1rem;
+    background-color: #52734d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    display: flex; /* Para alinhar ícone e texto */
+    align-items: center;
+}
+
+.logout-icon {
+    margin-right: 0.5rem; /* Espaço entre ícone e texto */
+}
+
+.dashboard-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: #f3f4f6;
+    border-left: 2px solid #ccc; /* Linha separadora */
+}

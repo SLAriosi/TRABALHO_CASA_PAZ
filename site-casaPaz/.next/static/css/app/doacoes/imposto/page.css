@@ -1,0 +1,448 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/app/doacoes/imposto/imposto.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+/* Estilos gerais e layout */
+.imposto_container__WSRFy {
+  font-family: var(--font-main);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Títulos */
+.imposto_header__TGLYd {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.imposto_title__uidDZ {
+  font-size: 3rem;
+  color: rgb(73, 112, 177);
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+.imposto_subtitle__nTgsD {
+  font-size: 1.2rem;
+  color: #6d7b2f; /* Tom mais escuro para contraste */
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Botões de seleção */
+.imposto_buttonContainer__gnSNO {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.imposto_button__Zz3dg {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #6d7b2f; /* Tom mais escuro para os botões */
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imposto_button__Zz3dg:hover {
+  background-color: #92a945; /* Hover mais claro */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.imposto_button__Zz3dg.imposto_active__P7EAG {
+  background-color: #a2bd30; /* Cor da identidade visual */
+  box-shadow: 0 4px 12px rgba(162, 189, 48, 0.4);
+}
+
+/* Calculadora de imposto */
+.imposto_calculator__q9ZvK {
+  text-align: center;
+  margin: 30px 0;
+  position: relative;
+}
+
+.imposto_calculatorLabel__VZ_y7 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.imposto_calculatorInput__hG483 {
+  font-size: 1.5rem;
+  padding: 15px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #a2bd30; /* Cor da identidade visual */
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imposto_calculatorInput__hG483:focus {
+  border-color: #92a945; /* Hover mais claro */
+  box-shadow: 0 0 10px rgba(162, 189, 48, 0.5);
+}
+
+.imposto_calculatorResult__p9xJu {
+  font-size: 1.4rem;
+  color: #a2bd30; /* Cor da identidade visual */
+  font-weight: bold;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.imposto_calculatorResult__p9xJu.imposto_animate__d_S6y {
+  animation: imposto_scaleUp__M2s1M 0.4s ease-out;
+}
+
+/* Passos de Doação */
+.imposto_stepsSection__2umQY {
+  margin: 30px 0;
+}
+
+.imposto_highlightedTitle__kqI9U {
+  font-size: 2rem;
+  color:#a2bd30; /* Hover mais claro */
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.imposto_steps___cc2_ {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.imposto_step__iWEwK {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.imposto_step__iWEwK:hover {
+  background-color: #ecf0f1;
+  transform: translateX(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.imposto_stepNumber__JpsMg {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #a2bd30; /* Cor da identidade visual */
+  margin-right: 20px;
+  transition: all 0.3s ease;
+}
+
+.imposto_stepDescription__sjfxh {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.imposto_step__iWEwK:hover .imposto_stepNumber__JpsMg {
+  color: #a2bd30; /* Hover mais claro */
+  transform: scale(1.2);
+}
+
+/* Seções de impacto e depoimentos */
+.imposto_impactSection__rGauO,
+.imposto_testimonials__n_Ype {
+  margin: 40px 0;
+  position: relative;
+}
+
+.imposto_impactTitle__hSprN,
+.imposto_testimonialsTitle__iZwfX {
+  font-size: 2rem;
+  color: #a2bd30; /* Hover mais claro */
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.imposto_impactText__H4Xu5 {
+  font-size: 1.2rem;
+  color: #6d7b2f; /* Tom escuro para contraste */
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.imposto_testimonial__KDiRe {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imposto_testimonial__KDiRe:hover {
+  background-color: #ecf0f1;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.imposto_testimonialText__R9I_E {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.imposto_testimonialAuthor__2p4V_ {
+  font-size: 1rem;
+  color: #555;
+  text-align: right;
+  font-style: italic;
+}
+
+/* Animação de foco nas seções */
+@keyframes imposto_highlightFocus__vMPlZ {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.imposto_stepsSection__2umQY,
+.imposto_impactSection__rGauO,
+.imposto_testimonials__n_Ype {
+  animation: imposto_highlightFocus__vMPlZ 1s ease-out;
+}
+
+/* Ajuste nos botões de seleção */
+.imposto_buttonContainer__gnSNO {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.imposto_button__Zz3dg.imposto_active__P7EAG {
+  background-color: #a2bd30; /* Cor da identidade visual */
+  box-shadow: 0 4px 10px rgba(162, 189, 48, 0.3);
+}
+
+/* Melhorias nos inputs e campos interativos */
+.imposto_calculatorInput__hG483 {
+  border: 2px solid #a2bd30; /* Cor da identidade visual */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imposto_calculatorInput__hG483:focus {
+  border-color: #92a945; /* Hover mais claro */
+  box-shadow: 0 0 5px rgba(162, 189, 48, 0.5);
+}
+
+.imposto_calculatorResult__p9xJu {
+  font-weight: bold;
+  color: #a2bd30; /* Cor da identidade visual */
+  margin-top: 15px;
+}
+
+/* .modal styles */
+.imposto_modal__mxhLu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.imposto_modalContent__90ZMW {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.imposto_closeModal__E7RGo {
+  background: none;
+  border: none;
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.imposto_submitButton__XFVse {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.imposto_submitButton__XFVse:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.imposto_modalField__Va8Kf {
+  margin-bottom: 15px;
+}
+
+.imposto_modalField__Va8Kf label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.imposto_modalField__Va8Kf input,
+.imposto_modalField__Va8Kf select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.imposto_modalField__Va8Kf input[type="text"] {
+  width: calc(100% - 16px); /* Ajuste para garantir que o input de texto não quebre */
+}
+/* Estilos do botão de contato */
+/* Estilos do contêiner do botão de contato */
+.imposto_contactSection__f2j2x {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+}
+
+/* Estilos do botão de contato */
+.imposto_contactButton__bDdLV {
+  background-color: #25d366; /* Cor do WhatsApp */
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 50px; /* Borda arredondada */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Espaço entre o ícone e o texto */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Efeito de transição */
+  border: none;
+}
+
+.imposto_contactButton__bDdLV:hover {
+  background-color: #128c7e; /* Cor escura quando passar o mouse */
+  transform: scale(1.05); /* Aumenta ligeiramente o botão */
+}
+
+.imposto_contactButton__bDdLV:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.5); /* Destaque ao focar no botão */
+}
+
+/* Ícone do WhatsApp */
+.imposto_whatsappIcon__K_yPT {
+  font-size: 24px; /* Tamanho do ícone */
+}
+/* imposto.module.css */
+
+/* Botão de WhatsApp */
+.imposto_whatsappButton__MinvD {
+  background-color: #25D366; /* Verde do WhatsApp */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.imposto_whatsappButton__MinvD:hover {
+  background-color: #1ebd59; /* Cor mais escura no hover */
+}
+
+/* Modal */
+.imposto_modal__mxhLu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.imposto_modalContent__90ZMW {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.imposto_modalTitle__SLS0_ {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.imposto_modalInput___esJg {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.imposto_modalButton__aBqjg {
+  background-color: #25D366; /* Verde do WhatsApp */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.imposto_modalButton__aBqjg:hover {
+  background-color: #1ebd59;
+}
+
+.imposto_modalCloseButton__sVxQa {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.imposto_modalCloseButton__sVxQa:hover {
+  background-color: #999;
+}
+

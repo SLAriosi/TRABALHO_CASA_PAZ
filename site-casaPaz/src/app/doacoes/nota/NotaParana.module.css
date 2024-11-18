@@ -1,0 +1,231 @@
+/* Estrutura base */
+.container {
+  font-family: var(--font-main);
+  color: #6d7b2f; /* Cor da letra nos títulos e demais letras */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+.header {
+  display: flex; /* Flexbox para centralizar conteúdo */
+  flex-direction: column; /* Organizar conteúdo na vertical */
+  align-items: center; /* Centralizar horizontalmente */
+  justify-content: center; /* Garantir que o conteúdo fique centralizado verticalmente */
+  margin-bottom: 20px;
+}
+
+.header .logo {
+  width: 150px; /* Aumentando o tamanho da logo */
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  color: rgb(73, 112, 177); /* Cor da letra nos títulos */
+  font-size: 3.0rem;
+  margin: 10px 0;
+  font-weight: bold;
+  white-space: nowrap; /* Evitar quebra de linha */
+  overflow: hidden; /* Evitar que o texto saia do limite */
+  text-overflow: ellipsis; /* Indicar que o texto foi cortado, se necessário */
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #6d7b2f;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+/* Informativo */
+.infoCard {
+  background-color: #a2bd30; /* Cor de fundo dos cards */
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.infoCard h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.infoCard p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+/* Botões principais */
+.donateButton,
+.addBoxButton {
+  display: block;
+  width: auto; /* Tornando os botões mais compactos */
+  max-width: 250px; /* Ajustando largura máxima */
+  background-color: #4970b1; /* Cor do botão */
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  padding: 8px 16px; /* Ajustando padding para tornar os botões mais compactos */
+  border-radius: 5px;
+  margin: 15px auto;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.donateButton:hover,
+.addBoxButton:hover {
+  background-color: #355f91; /* Novo tom de azul para o hover */
+}
+
+/* Opções de doação */
+.donationSection {
+  text-align: center;
+}
+
+.donationOptions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.donationOption {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.donationOption:hover {
+  background-color: #4970b1; /* Cor ao passar o mouse nas opções de doação */
+  color: white;
+  transform: translateY(-5px);
+}
+
+.donationOption h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Acordeão */
+.accordionContainer {
+  margin-top: 20px;
+}
+
+.accordion h2 {
+  font-size: 1.5rem;
+  color: rgb(73, 112, 177); /* Cor dos títulos no acordeão */
+  margin-bottom: 10px;
+}
+
+.stepList {
+  list-style: none;
+  padding: 0;
+}
+
+.step {
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.stepNumber {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #6f920e;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  margin-right: 10px;
+}
+
+/* Formulário */
+.formSection {
+  margin-top: 20px;
+}
+
+.formContainer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Efeito de Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.formContainer h2 {
+  color: #4970b1; /* Cor do título do formulário */
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.formContainer label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.formContainer input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.storeDetails {
+  margin-bottom: 15px;
+}
+
+.addLojaButton {
+  background-color: #4970b1; /* Cor do botão de adicionar loja */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-inline-end: 5px;
+}
+
+.addLojaButton:hover {
+  background-color: #355f91; /* Novo tom de azul para o hover */
+}
+
+.submitButton {
+  background-color: #a2bd30; /* Cor do botão de submit */
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #4970b1; /* Cor ao passar o mouse no botão de submit */
+}

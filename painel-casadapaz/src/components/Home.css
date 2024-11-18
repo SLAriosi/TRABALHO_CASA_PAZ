@@ -1,0 +1,59 @@
+/* src/components/Home.css */
+.home-container {
+    text-align: center;
+    padding: 2rem; /* Adicionado espaço interno */
+}
+
+.home-stats {
+    display: flex;
+    gap: 2rem; /* Aumentado o espaço entre os boxes */
+    justify-content: center;
+    margin-top: 2rem; /* Margem superior para separar o título */
+}
+
+.home-stat-box {
+    background-color: #e0f7e4; /* Cor de fundo suave */
+    padding: 1.5rem; /* Aumentado o padding para um visual mais agradável */
+    border-radius: 8px;
+    width: 180px; /* Largura ajustada para maior legibilidade */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    transition: transform 0.2s; /* Transição suave para efeito de hover */
+}
+
+.home-stat-box:hover {
+    transform: translateY(-3px); /* Levanta o box ao passar o mouse */
+}
+
+.stat-icon {
+    font-size: 2rem; /* Aumentado o tamanho do ícone */
+    color: #6a994e; /* Cor do ícone para corresponder à paleta */
+    margin-bottom: 0.5rem; /* Espaço entre o ícone e o título */
+}
+
+.stat-title {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.home-title {
+    text-align: center;
+}
+
+.centered {
+    text-align: center;
+}
+
+.user-cards-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 16px;
+}
+
+.user-card {
+   background-color: #fff;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   padding: 16px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   width: 200px;
+}
